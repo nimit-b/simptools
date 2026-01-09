@@ -20,3 +20,15 @@ It is designed to be:
 
 ```bash
 pip install simptools-nimit
+
+---
+
+## Version 0.1.1 Details:
+
+**Additions :**
+- Included Making and Saving Graph using matplotlib library.
+- Saving of figures (Graphs) drawn using save_fig function.
+
+**Improvements :**
+- None
+---
