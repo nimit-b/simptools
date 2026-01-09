@@ -16,13 +16,6 @@ It is designed to be:
 
 ---
 
-## Installation
-
-```bash
-pip install simptools-nimit
-
----
-
 ## Version 0.1.1 Details:
 
 **Additions :**
@@ -32,3 +25,9 @@ pip install simptools-nimit
 **Improvements :**
 - None
 ---
+
+## Installation
+
+```bash
+pip install simptools-nimit
+
