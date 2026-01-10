@@ -1,5 +1,6 @@
 from .graphs import (
     save_graph,
+    show_graph,
     line_graph,
     bar_graph,
     scatter_plot,
@@ -8,6 +9,7 @@ from .graphs import (
 
 __all__ = [
     "save_graph",
+    "show_graph",
     "line_graph",
     "bar_graph",
     "scatter_plot",

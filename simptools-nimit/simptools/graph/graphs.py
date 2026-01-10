@@ -1,5 +1,16 @@
 import matplotlib.pyplot as plt
-
+"""
+User decides:
+fig = line_graph(...)
+save_graph(fig, "a.png")
+show_graph(fig)
+or:
+fig = line_graph(...)
+show_graph(fig)
+or:
+fig = line_graph(...)
+save_graph(fig, "a.png")
+"""
 def save_graph(fig, filename, dpi=300):
     """
     Docstring for save_graph
@@ -13,6 +24,19 @@ def save_graph(fig, filename, dpi=300):
         >>> save_graph(fig, "output/line_graph.png", dpi=200)
     """
     fig.savefig(filename, dpi=dpi)
+
+def show_graph(fig):
+    """
+    Docstring for show_graph
+    
+    :param fig: It is a matplotlib figure object to be displayed.
+
+    Example:
+        >>> fig = line_graph([1, 2, 3], [4, 5, 6])
+        >>> show_graph(fig)
+    """
+    plt.figure(fig.number)
+    plt.show()
 
 def line_graph(x, y, title="Line Graph", xlabel="X-axis", ylabel="Y-axis", marker='o', line_style='-', line_color='b', show_grid=True):
     """
@@ -33,7 +57,6 @@ def line_graph(x, y, title="Line Graph", xlabel="X-axis", ylabel="Y-axis", marke
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.grid(show_grid)
-    plt.show()
 
     return plt.gcf()  # Return the current figure object
 def bar_graph(categories, values, title="Bar Graph", xlabel="Categories", ylabel="Values", bar_color='b', show_grid=True):
@@ -54,7 +77,6 @@ def bar_graph(categories, values, title="Bar Graph", xlabel="Categories", ylabel
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.grid(show_grid)
-    plt.show()
 
     return plt.gcf()  # Return the current figure object
 
@@ -77,7 +99,6 @@ def scatter_plot(x, y, title="Scatter Plot", xlabel="X-axis", ylabel="Y-axis", p
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.grid(show_grid)
-    plt.show()
 
     return plt.gcf()  # Return the current figure object
 
@@ -99,6 +120,5 @@ def histogram(data, bins=10, title="Histogram", xlabel="Value", ylabel="Frequenc
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.grid(show_grid)
-    plt.show()
 
     return plt.gcf()  # Return the current figure object
